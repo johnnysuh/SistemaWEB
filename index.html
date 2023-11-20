@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="visual.css">
+    <title>SistemaWEBConfeitaria</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu da Confeitaria</h1>
+            <label for="item">Selecione um item:</label>
+            <select id="item" name="item">
+                <option value="Brigadeiro">Brigadeiro</option>
+                <option value="Bolo">Bolo</option>
+                <option value="Macaron">Macaron</option>
+                <option value="Coxinha">Coxinha</option>
+                <option value="Croissant">Croissant</option>
+            </select>           
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button type="button" onclick="addItem()">Adicionar item</button>
+        </form>
+        
+            <h2>Pedido</h2>
+            <ul id="summaryList"></ul>
+            <p id="totalPrice">Total: R$ 0,00</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
